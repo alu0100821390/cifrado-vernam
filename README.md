@@ -2,15 +2,15 @@
 
 ## Introducción
 
-Cifrado mediante el algoritmo de criptografía inventado por Gilbert Vernam.
+Cifrado y descifrado de mensajes mediante el cifrado de Vernam.
 
 ## Ejecución
 
 ~~~
-    py "programa" "mensaje" "clave"
+    py 'programa' 'mensaje' 'clave'
 ~~~
 
-Ejemplo:
+Ejemplo de ejecución:
 
 ~~~
     py vernam.py SOL 010100110100111101001100
