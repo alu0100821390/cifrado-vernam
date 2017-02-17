@@ -7,7 +7,7 @@
 ## Autor: Kevin Estévez Expósito (alu0100821390) 								 ##
 ## 																				 ##
 ## Práctica 1: Cifrado de Vernam												 ##
-## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam	 ##
+## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam.	 ##
 ##											 								 	 ##
 ## Ejecución: py vernam.py 'mensaje' 'clave_binaria'							 ##
 ## Ejemplo de ejecución: py vernam.py SOL 001111000001100001110011			 	 ##
