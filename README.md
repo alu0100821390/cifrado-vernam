@@ -1,4 +1,4 @@
-# Cifrado de Vernam
+# Práctica 1: Cifrado de Vernam
 
 ## Introducción
 
