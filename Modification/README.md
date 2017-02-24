@@ -1,4 +1,4 @@
-# Cifrado de Vernam (modificación) 
+# Práctica 1: Cifrado de Vernam (modificación) 
 
 ## Introducción
 
@@ -16,7 +16,8 @@ Ejemplo de ejecución:
     py vernam.py SOL MAR DIA
 ~~~
 
-## Autor
+## Información personal
 
-Kevin Estévez Expósito
-* [Página personal](https://alu0100821390.github.io/)
+**Autor:** [Kevin Estévez Expósito](https://alu0100821390.github.io/)
+
+**ULL-ID:** alu0100821390
