@@ -16,7 +16,8 @@ Ejemplo de ejecución:
     py vernam.py SOL 010100110100111101001100
 ~~~
 
-## Autor
+## Información personal
 
-Kevin Estévez Expósito
-* [Página personal](https://alu0100821390.github.io/)
+**Autor:** [Kevin Estévez Expósito](https://alu0100821390.github.io/)
+
+**ULL-ID:** alu0100821390
