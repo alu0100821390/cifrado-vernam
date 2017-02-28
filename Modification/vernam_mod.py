@@ -1,18 +1,18 @@
-###################################################################################
-## Universidad de La Laguna						 								 ##
-## Escuela Superior de Ingeniería y Tecnología	 								 ##
-## Grado en Ingeniería Informática				 								 ##
-## Seguridad en Sistemas Informáticos			 								 ##
-## Fecha: 14/02/2016							 								 ##
-## Autor: Kevin Estévez Expósito (alu0100821390) 								 ##
-## 																				 ##
-## Práctica 1: Cifrado de Vernam (CON MODIFICACIÓN)								 ##
-## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam	 ##
-## introduciendo dos claves en ASCII, con las que se realiza un doble cifrado.	 ##
-##											 								 	 ##
-## Ejecución: py vernam.py 'mensaje' 'primera_clave_ascii' 'segunda_clave_ascii' ##
-## Ejemplo de ejecución: py vernam.py SOL MAR DIA							 	 ##
-###################################################################################
+##########################################################################################
+## Universidad de La Laguna							 	##
+## Escuela Superior de Ingeniería y Tecnología	 				 	##
+## Grado en Ingeniería Informática				 		 	##
+## Seguridad en Sistemas Informáticos			 			 	##
+## Fecha: 14/02/2016							  	 	##
+## Autor: Kevin Estévez Expósito (alu0100821390) 				 	##
+## 										 	##
+## Práctica 1: Cifrado de Vernam (CON MODIFICACIÓN)				 	##
+## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam	 	##
+## introduciendo dos claves en ASCII, con las que se realiza un doble cifrado.	 	##
+##									 	 	##
+## Ejecución: py vernam_mod.py 'mensaje' 'primera_clave_ascii' 'segunda_clave_ascii' 	##
+## Ejemplo de ejecución: py vernam_mod.py SOL MAR DIA				 	##
+##########################################################################################
 
 import sys
 from operator import xor
