@@ -13,7 +13,7 @@ Cifrado y descifrado de mensajes mediante el cifrado de Vernam introduciendo dos
 Ejemplo de ejecución:
 
 ~~~
-    py vernam.py SOL MAR DIA
+    py vernam_mod.py SOL MAR DIA
 ~~~
 
 ## Información personal
