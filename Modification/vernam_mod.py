@@ -1,21 +1,21 @@
-##################################################################################
-## Universidad de La Laguna                                                     ##
-## Escuela Superior de Ingeniería y Tecnología                                  ##
-## Grado en Ingeniería Informática                                              ##
-## Seguridad en Sistemas Informáticos                                           ##
-## Fecha: 14/02/2017                                                            ##
-## Autor: Kevin Estévez Expósito (alu0100821390)                                ##
-##                                                                              ##
-## Práctica 1: Cifrado de Vernam                                                ##
-## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam  ##
-##              introduciendo dos claves en ASCII, con las que se realiza un    ##
-##              doble cifrado.                                                  ##
-##                                                                              ##
-## Ejecución: py vernam_mod.py                                                  ##
-## Ejemplo de mensaje: SOL                                                      ##
-## Ejemplo de clave1: MAR                                                       ##
-## Ejemplo de clave2: DIA                                                       ##
-##################################################################################
+#################################################################################
+## Universidad de La Laguna                                                    ##
+## Escuela Superior de Ingeniería y Tecnología                                 ##
+## Grado en Ingeniería Informática                                             ##
+## Seguridad en Sistemas Informáticos                                          ##
+## Fecha: 14/02/2017                                                           ##
+## Autor: Kevin Estévez Expósito (alu0100821390)                               ##
+##                                                                             ##
+## Práctica 1: Cifrado de Vernam                                               ##
+## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam ##
+##              introduciendo dos claves en ASCII, con las que se realiza un   ##
+##              doble cifrado.                                                 ##
+##                                                                             ##
+## Ejecución: py vernam_mod.py                                                 ##
+## Ejemplo de mensaje: SOL                                                     ##
+## Ejemplo de clave1: MAR                                                      ##
+## Ejemplo de clave2: DIA                                                      ##
+#################################################################################
 
 import sys
 from operator import xor
