@@ -1,10 +1,12 @@
-# Práctica 1: Cifrado de Vernam (modificación) 
+# Seguridad en Sistemas Informáticos
 
-## Introducción
+## Práctica 1: Cifrado de Vernam (modificación) 
+
+### Introducción
 
 Cifrado y descifrado de mensajes mediante el cifrado de Vernam introduciendo dos claves en ASCII, con las que se realiza un doble cifrado.
 
-## Ejecución
+### Ejecución
 
 ~~~
     py vernam_mod.py
@@ -28,7 +30,7 @@ Ejemplo de clave2:
     DIA
 ~~~
 
-## Información personal
+### Información personal
 
 **Autor:** [Kevin Estévez Expósito](https://alu0100821390.github.io/)
 
