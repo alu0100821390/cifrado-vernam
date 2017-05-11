@@ -7,13 +7,25 @@ Cifrado y descifrado de mensajes mediante el cifrado de Vernam introduciendo dos
 ## Ejecución
 
 ~~~
-    py vernam_mod.py 'mensaje' 'primera_clave_ascii' 'segunda_clave_ascii'
+    py vernam_mod.py
 ~~~
 
-Ejemplo de ejecución:
+Ejemplo de mensaje:
 
 ~~~
-    py vernam_mod.py SOL MAR DIA
+    SOL
+~~~
+
+Ejemplo de clave1:
+
+~~~
+    MAR
+~~~
+
+Ejemplo de clave2:
+
+~~~
+    DIA
 ~~~
 
 ## Información personal

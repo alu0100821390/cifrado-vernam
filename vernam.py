@@ -1,16 +1,17 @@
 ###################################################################################
-## Universidad de La Laguna						 	 ##
-## Escuela Superior de Ingeniería y Tecnología	 				 ##
-## Grado en Ingeniería Informática				 		 ##
-## Seguridad en Sistemas Informáticos			 			 ##
-## Fecha: 14/02/2017							 	 ##
-## Autor: Kevin Estévez Expósito (alu0100821390) 				 ##
-## 										 ##
-## Práctica 1: Cifrado de Vernam						 ##
-## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam.	 ##
-##										 ##
-## Ejecución: py vernam.py 'mensaje' 'clave_binaria'				 ##
-## Ejemplo de ejecución: py vernam.py SOL 001111000001100001110011		 ##
+## Universidad de La Laguna                                                      ##
+## Escuela Superior de Ingeniería y Tecnología                                   ##
+## Grado en Ingeniería Informática                                               ##
+## Seguridad en Sistemas Informáticos                                            ##
+## Fecha: 14/02/2017                                                             ##
+## Autor: Kevin Estévez Expósito (alu0100821390)                                 ##
+##                                                                               ##
+## Práctica 1: Cifrado de Vernam                                                 ##
+## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam.  ##
+##                                                                               ##
+## Ejecución: py vernam.py                                                       ##
+## Ejemplo de mensaje: SOL                                                       ##
+## Ejemplo de clave: 001111000001100001110011                                    ##
 ###################################################################################
 
 
@@ -27,9 +28,9 @@ while opcion != 'c' and opcion != 'd':	# Mientras la opción introducida no sea 
 print ()
 
 if opcion == 'c':	# Si se desea cifrar un mensaje...
-	mensaje = sys.argv[1]	# Se guarda el mensaje pasado por parámetros
+	mensaje = str(input("Introduzca el mensaje a cifrar: "))  # Se pide el mensaje a cifrar
 	mensaje_binario = ''.join(bin(ord(x))[2:].zfill(8) for x in mensaje)	# Se pasa el mensaje a binario y se guarda como string
-	codigo = sys.argv[2]	# Se guarda la clave pasada por parámetros
+	codigo = str(input("Introduzca la clave de cifrado: "))  # Se pide la clave de cifrado
 	cifrado = ''
 
 	print ('Mensaje original: ' + mensaje)
@@ -41,15 +42,15 @@ if opcion == 'c':	# Si se desea cifrar un mensaje...
 		aux_xor = xor(ord(c), ord(chr(int(codigo[i*8:(i+1)*8], base=2))))	# XOR entre el caracter y el byte correspondiente de la clave
 		cifrado += chr(aux_xor)	# Se concatena el caracter obtenido con 'cifrado'
 
-	cifrado_binario = ''.join(bin(ord(x))[2:].zfill(8) for x in mensaje)	# Se pasa el cifrado obtenido a binario y se guarda como string
+	cifrado_binario = ''.join(bin(ord(x))[2:].zfill(8) for x in cifrado)	# Se pasa el cifrado obtenido a binario y se guarda como string
 
 	print ('Mensaje cifrado en binario: ' + cifrado_binario)
 	print ('Mensaje cifrado: ' + cifrado)
 	
 elif opcion == 'd':	# Si se desea descifrar un mensaje...
-	cifrado = sys.argv[1]	# Se guarda el cifrado pasado por parámetros
+	cifrado = str(input("Introduzca el mensaje a descifrar: "))  # Se pide el mensaje a descifrar
 	cifrado_binario = ''.join(bin(ord(x))[2:].zfill(8) for x in cifrado)	# Se pasa el cifrado a binario y se guarda como string
-	codigo = sys.argv[2]	# Se guarda la clave pasada por parámetros
+	codigo = str(input("Introduzca la clave de descifrado: "))  # Se pide la clave de descifrado
 	mensaje = ''
 
 	print ('Mensaje cifrado: ' + cifrado)

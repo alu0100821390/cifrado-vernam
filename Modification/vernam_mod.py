@@ -1,27 +1,33 @@
-##########################################################################################
-## Universidad de La Laguna							 	##
-## Escuela Superior de Ingeniería y Tecnología	 				 	##
-## Grado en Ingeniería Informática				 		 	##
-## Seguridad en Sistemas Informáticos			 			 	##
-## Fecha: 14/02/2017							  	 	##
-## Autor: Kevin Estévez Expósito (alu0100821390) 				 	##
-## 										 	##
-## Práctica 1: Cifrado de Vernam (CON MODIFICACIÓN)				 	##
-## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam	 	##
-## introduciendo dos claves en ASCII, con las que se realiza un doble cifrado.	 	##
-##									 	 	##
-## Ejecución: py vernam_mod.py 'mensaje' 'primera_clave_ascii' 'segunda_clave_ascii' 	##
-## Ejemplo de ejecución: py vernam_mod.py SOL MAR DIA				 	##
-##########################################################################################
+##################################################################################
+## Universidad de La Laguna                                                     ##
+## Escuela Superior de Ingeniería y Tecnología                                  ##
+## Grado en Ingeniería Informática                                              ##
+## Seguridad en Sistemas Informáticos                                           ##
+## Fecha: 14/02/2017                                                            ##
+## Autor: Kevin Estévez Expósito (alu0100821390)                                ##
+##                                                                              ##
+## Práctica 1: Cifrado de Vernam                                                ##
+## Descripción: Cifrado y descifrado de mensajes mediante el cifrado de Vernam  ##
+##              introduciendo dos claves en ASCII, con las que se realiza un    ##
+##              doble cifrado.                                                  ##
+##                                                                              ##
+## Ejecución: py vernam_mod.py                                                  ##
+## Ejemplo de mensaje: SOL                                                      ##
+## Ejemplo de clave1: MAR                                                       ##
+## Ejemplo de clave2: DIA                                                       ##
+##################################################################################
 
 import sys
 from operator import xor
 
-mensaje = sys.argv[1]	# Se guarda el mensaje pasado por parámetros
+mensaje = str(input("Introduzca el mensaje a cifrar: "))  # Se pide el mensaje a cifrar
+#mensaje = sys.argv[1]	# Se guarda el mensaje pasado por parámetros
 mensaje_binario = ''.join(bin(ord(x))[2:].zfill(8) for x in mensaje)	# Se pasa el mensaje a binario y se guarda como string
-codigo = sys.argv[2]	# Se guarda la primera clave pasada por parámetros
+codigo = str(input("Introduzca la primera clave de cifrado: "))  # Se pide la clave de cifrado
+#codigo = sys.argv[2]	# Se guarda la primera clave pasada por parámetros
 codigo_binario = ''.join(bin(ord(x))[2:].zfill(8) for x in codigo)	# Se pasa el primer código a binario y se guarda como string
-codigo2 = sys.argv[3]	# Se guarda la segunda clave pasada por parámetros
+codigo2 = str(input("Introduzca la segunda clave de cifrado: "))  # Se pide la clave de cifrado
+#codigo2 = sys.argv[3]	# Se guarda la segunda clave pasada por parámetros
 codigo_binario2 = ''.join(bin(ord(x))[2:].zfill(8) for x in codigo2)	# Se pasa el segundo código a binario y se guarda como string
 cifrado = ''
 descifrado = ''

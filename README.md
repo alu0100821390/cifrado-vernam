@@ -9,13 +9,19 @@ Cifrado y descifrado de mensajes mediante el cifrado de Vernam.
 ### Ejecución
 
 ~~~
-    py vernam.py 'mensaje' 'clave'
+    py vernam.py
 ~~~
 
-Ejemplo de ejecución:
+Ejemplo de mensaje:
 
 ~~~
-    py vernam.py SOL 010100110100111101001100
+    SOL
+~~~
+
+Ejemplo de clave:
+
+~~~
+    001111000001100001110011
 ~~~
 
 ### Información personal
